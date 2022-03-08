@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+}
+
+#title {
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+@keyframes title {
+    0%   {width: 200px; color: black;}
+    100%  {width: 600px; color: white;}
+}
+
+header {
+    background-image: url('../images/silverdome.jpg');
+    font-family: "Poppins";
+}
+
+body {
+    font-family: 'Verdana', 'Times New Roman';
+    background-color: #000000;
+    color: #ffffff;
+    margin: 25px 25px 0px 25px;
+}
+
+p {
+    font-size: 20px;
+    padding: 0px 0px 15px 15px;
+}
+footer {
+    height: 25px;
+    background: linear-gradient(90deg, rgba(210,0,36,1) 22%, rgba(9,9,121,1) 62%, rgba(0,141,170,1) 100%);;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+img {
+    width: 350px;
+    padding: 10px;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+}
+
+#diff {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+img:hover {
+    opacity: .4;
+}
+
+li {
+    padding: 12px;
+    background: rgb(210,0,36);
+    background: linear-gradient(90deg, rgba(210,0,36,1) 22%, rgba(9,9,121,1) 62%, rgba(0,141,170,1) 100%);
+    color: rgba(210,0,36,1);
+}
+
+#current {
+    border: 2px solid #ffffff;
+    background: #000000;
+    color: rgba(0,141,170,1);
+}
+
+a {
+    color: #ffffff
+}
+
+main a{
+    padding-top: 50px;
+}
+
