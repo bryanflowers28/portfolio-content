@@ -5,6 +5,7 @@ h1 {
 #title {
     animation-name: title;
     animation-duration: 2s;
+    
 }
 
 nav {
@@ -34,16 +35,24 @@ p {
     font-size: 20px;
     padding: 0px 0px 15px 15px;
 }
+
 footer {
-    height: 25px;
     background: linear-gradient(90deg, rgba(210,0,36,1) 22%, rgba(9,9,121,1) 62%, rgba(0,141,170,1) 100%);;
     text-align: center;
 }
 
-.gallery {
+#galleryretro {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+#galleryclassic {
+    display: grid;
+    height: 400px;
+    justify-content: center;
+    justify-items: center;
+    overflow-y: scroll;
 }
 
 img {
@@ -83,3 +92,14 @@ main a{
     padding-top: 50px;
 }
 
+form {
+    display: grid;
+    grid-template-columns:auto;
+    justify-items: center;
+}
+
+@media (prefers-reduced-motion) {
+    #title {
+        animation: none;
+    }
+}

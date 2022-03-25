@@ -5,6 +5,8 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9ae5595b4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG1F3LZW5B"></script>
     <script>
@@ -15,6 +17,9 @@
     </script>   
 </head>
 <body>
+    <div>
+        <a class = "skip" href="#main">Skip to main content</a>
+    </div>
     <header> 
         <h1 id="title">The Detroit Pistons</h1>
         <nav>
@@ -26,10 +31,7 @@
         </ul>
         </nav>
     </header>
-    <div>
-        <a class = "skip" href="#main">Skip to main content</a>
-    </div>
-    <div id="gallery">
+    <div id="galleryhome">
         <img id = "diff" src="images/originallogo.png" alt = "zephyrs old logo" width = "200"/>
         <img src="images/logonow.png" alt = "present day logo" width = "200"/>
     </div>
@@ -51,6 +53,31 @@
         </p>
     </main>
     <footer>
+        <form action="https://formspree.io/f/xzbovqlk" method="POST">
+            <label>
+                <i class="fa-solid fa-f"></i>
+                Your First Name:
+                <input type="email" name="email" placeholder="Isiah">
+            </label>
+            <label>
+                <i class="fa-solid fa-l"></i>
+                Your Last Name:
+                <input type="email" name="email" placeholder="Thomas">
+            </label>
+            <label>
+                <i class="fa-regular fa-envelope"></i>
+                Your Email:
+                <input type="email" name="email" placeholder="pistons@hotmail.com">
+            </label>
+            <label>
+                <i class="fa-regular fa-paper-plane"></i>
+                Your Message:
+                <textarea name="message" placeholder="Hello!"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+        <p> ---------------------------- </p>
         <p>Bryan Flowers SI539 2022</p>
     </footer>
 </body>
