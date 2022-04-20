@@ -45,6 +45,10 @@ h1 {
     filter: drop-shadow(10px 10px 6px #000000);
 }
 
+h2 {
+    margin-left: 15px;
+}
+
 nav {
     display: grid;
     grid-template-rows: auto;
@@ -188,6 +192,7 @@ form {
     grid-template-columns:auto;
     justify-items: center;
 }
+
 
 @media (prefers-reduced-motion) {
     #title {
