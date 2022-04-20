@@ -195,11 +195,8 @@ form {
     }
 
     header {
-        background-image: url('../images/silverdome.jpg');
-        font-family: "Poppins";
         background-attachment: inherit;
         background-position: inherit;
-        
     }
 }
 
