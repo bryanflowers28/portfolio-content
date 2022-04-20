@@ -5,7 +5,7 @@ html{
 .skip {
     position: absolute;
     z-index:-999;
-    color: black;
+    color:transparent;
 }
 
 .skip:focus {
@@ -161,8 +161,7 @@ img:hover {
 li {
     padding: 12px;
     background: rgb(210,0,36);
-    background: linear-gradient(90deg, rgba(210,0,36,1) 22%, rgba(9,9,121,1) 62%, rgba(0,141,170,1) 100%);
-    color: rgba(210,0,36,1);
+    background: linear-gradient(90deg, rgba(210,0,36,1) 0%, rgba(9,9,121,1) 100%);
 }
 
 #current {
@@ -170,6 +169,7 @@ li {
     background: #000000;
     color: rgba(0,141,170,1);
     text-decoration: underline;
+    filter: drop-shadow(10px 10px 4px #333333);
 }
 
 a {
@@ -220,6 +220,14 @@ form {
         margin-right: 50px;
         
     }
+
+    nav {
+        justify-items: stretch;
+    }
+
+    li {
+        text-align: center;
+    }
 }
 
 /* Desktop version */
@@ -237,5 +245,12 @@ form {
 
     #galleryretro img {
         margin-right: 20px;
+    }
+    nav {
+        justify-items: center;
+    }
+    li {
+        background: linear-gradient(0deg, rgba(210,0,36,1) 0%, rgba(9,9,121,1) 100%);
+        float: left;
     }
 }
