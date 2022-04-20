@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9ae5595b4b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG1F3LZW5B"></script>
     <script>
@@ -31,10 +32,16 @@
         </ul>
         </nav>
     </header>
-    <div id="galleryhome">
-        <img id = "diff" src="images/originallogo.png" alt = "zephyrs old logo" width = "200"/>
-        <img src="images/logonow.png" alt = "present day logo" width = "200"/>
-    </div>
+        <div class="flip">
+            <div class="content">
+                <div class="front">
+                    <img id = "diff" src="images/logonow.png" alt = "present day logo" width = "200"/>
+                </div>
+                <div class="back">
+                    <h2>Go Pistons!</h2>
+                </div>
+            </div>
+        </div>
     <main>
         <p id = "main">
         The Detroit Pistons are an American professional basketball team 
@@ -49,30 +56,40 @@
         in 1948. In 1949, the NBL and BAA merged to become the NBA, 
         and the Pistons became part of the merged league. Since moving 
         to Detroit in 1957, the Pistons have won three NBA championships 
-        in 1989, 1990 and 2004.
+        in 1989, 1990 and 2004. One of only 8 teams to win three or more 
+        titles out of the leauges 30 teams.
+        </p>
+        <p>
+        As basketball evolved so did the style of play. However, the Detroit Pistons'
+        have always prided themselves on their defensive ability. It is ingrained into 
+        the culture of Detroit, a style of basketball that reflects the residents of
+        the city. When people play for the Detroit Pistons, they know the expectations
+        that come along with it.
+
         </p>
     </main>
     <footer>
+        <p id="contact">Contact Form</p>
         <form action="https://formspree.io/f/xzbovqlk" method="POST">
             <label>
-                <i class="fa-solid fa-f"></i>
                 Your First Name:
-                <input type="email" name="email" placeholder="Isiah">
+                <input name="firstname" placeholder="Isiah">
+                <i class="fa-solid fa-f"></i>
             </label>
             <label>
-                <i class="fa-solid fa-l"></i>
                 Your Last Name:
-                <input type="email" name="email" placeholder="Thomas">
+                <input name="lastname" placeholder="Thomas">
+                <i class="fa-solid fa-l"></i>
             </label>
             <label>
-                <i class="fa-regular fa-envelope"></i>
                 Your Email:
                 <input type="email" name="email" placeholder="pistons@hotmail.com">
+                <i class="fa-regular fa-envelope"></i>
             </label>
             <label>
-                <i class="fa-regular fa-paper-plane"></i>
                 Your Message:
                 <textarea name="message" placeholder="Hello!"></textarea>
+                <i class="fa-regular fa-paper-plane"></i>
             </label>
             <!-- your other form fields go here -->
             <button type="submit">Send</button>
