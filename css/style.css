@@ -48,7 +48,7 @@ h1 {
 nav {
     display: grid;
     grid-template-rows: auto;
-    justify-items: center;
+    justify-items: stretch;
     padding-bottom: 20px;
 }
 
@@ -146,12 +146,12 @@ footer p {
 img {
     width: 350px;
     border: 5px solid white;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 #diff {
     border: 5px solid white;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 img:hover {
@@ -162,6 +162,7 @@ li {
     padding: 12px;
     background: rgb(210,0,36);
     background: linear-gradient(90deg, rgba(210,0,36,1) 0%, rgba(9,9,121,1) 100%);
+    text-align: center;
 }
 
 #current {
@@ -222,7 +223,7 @@ form {
     }
 
     nav {
-        justify-items: stretch;
+        justify-items: center;
     }
 
     li {
